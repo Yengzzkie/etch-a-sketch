@@ -9,8 +9,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
-  padding: 8em 20em;
+  padding: 2em 20em;
 }
 
 h1 {

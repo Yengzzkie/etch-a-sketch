@@ -1,15 +1,98 @@
-.grid-container {
-      display: flex;
-      flex-wrap: wrap;
-      width: 720px;
-      height: 720px;
-      border: 1px solid black;
-      box-shadow: 8px 8px 3px black;
-      font-size: 0;
-      overflow: hidden;
-    }
+@font-face {
+  font-family: "Chalkduster";
+  src: url("path_to_chalkduster_font_file.woff");
+}
 
-    .squares {
-      border: 1px solid black;
-      box-sizing: border-box;
-    }
+body {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 8em 20em;
+}
+
+h1 {
+  font-family: "Architects Daughter", cursive;
+}
+
+.btn-grid-container {
+  display: flex;
+}
+
+.col-1 {
+  background-color: #e6e3e3;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.466);
+  display: flex;
+  flex-basis: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10em;
+  padding: 30px 30px;
+}
+
+.col-2 {
+  background-color: white;
+}
+
+.grid-container {
+  display: flex;
+  flex-basis: 3;
+  flex-wrap: wrap;
+  width: 720px;
+  height: 720px;
+  border: 1px solid black;
+  box-shadow: 8px 8px 3px black;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.squares {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.445);
+}
+
+button:hover {
+  background-color: rgba(99, 99, 99, 0.219);
+  transition: 0.1s ease-in-out;
+}
+
+button:active {
+  transform: translateY(2px);
+      box-shadow: 0px 4px rgba(0, 0, 0, 0.767);
+}
+
+.color-wrapper {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px;
+}
+
+.color-input {
+  width: 100px;
+  height: 100px;
+  transform: scale(1.5);
+}
